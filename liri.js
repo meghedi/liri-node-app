@@ -28,7 +28,11 @@ function main(command) {
         case "do-what-it-says":
             doWhatItSays();
             break;
+        default:
+            console.log("Wrong option! please choose another option!");
     }
+
+
 }
 
 function bandsInTown() {
@@ -36,27 +40,30 @@ function bandsInTown() {
     axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(function (response) {
         let txtHtml = '';
         for (let i = 0; i < response.data.length; i++) {
-            txtHtml += '\n===================================================================\n';
-            txtHtml += `Name of the Venue: ${response.data[i].venue.name}
-           Venue Location: ${response.data[i].venue.city} ${response.data[i].venue.country}
-           Date of the Event: ${moment(response.data[i].datetime).format("MM/DD/YY")}`;
+            txtHtml += '\n===========================bands in town==================================\n';
+            txtHtml += `
+            Name of the Venue: ${response.data[i].venue.name}
+            Venue Location: ${response.data[i].venue.city} ${response.data[i].venue.country}
+            Date of the Event: ${moment(response.data[i].datetime).format("MM/DD/YY")}`;
         }
 
         console.log(txtHtml);
+        appendToLogTxt(txtHtml);
 
     });
 }
 
 
 function omdb() {
-    if(!userInput){
-       userInput = 'Mr Nobody';
+    if (!userInput) {
+        userInput = 'Mr Nobody';
     }
     url = "http://www.omdbapi.com/?apikey=trilogy&t=" + userInput;
     let txtHtml = '';
     axios.get(url).then(function (response) {
         let res = response.data;
         txtHtml += `
+           ========================== Omdb ==============
          * Title of the movie : ${res.Title}
          * Year the movie came out : ${res.Year}
          * IMDB Rating of the movie: ${res.imdbRating}
@@ -66,47 +73,71 @@ function omdb() {
          * Plot of the movie: ${res.Plot}
          * Actors in the movie: ${res.Actors}`;
 
-        console.log(txtHtml);
+         console.log(txtHtml);
+         appendToLogTxt(txtHtml);
     });
 }
 
 
-function spotifySearch(){
-    spotify.search({ type: 'track', query: userInput }, function(err, data) {
+function spotifySearch() {
+    spotify.search({ type: 'track', query: userInput }, function (err, data) {
         if (err) {
-          return console.log('Error occurred: ' + err);
+            return console.log('Error occurred: ' + err);
         }
-        let txtHtml='';
-        for(let i=0; i<3; i++){
+        let txtHtml = '';
+        for (let i = 0; i < 3; i++) {
             txtHtml += `
-            ===========================================
+            ================== Spotify =====================
             Artists : ${data.tracks.items[i].artists[0].name}
             Song Name: ${data.tracks.items[i].name}
             Preview Link: ${data.tracks.items[i].external_urls.spotify}
             Album Name: ${data.tracks.items[i].album.name}
             `;
         }
-       
-      console.log(txtHtml); 
-      });
+        console.log(txtHtml);
+        appendToLogTxt(txtHtml);
+    });
 }
 
 
 function doWhatItSays() {
     fs.readFile('random.txt', 'utf8', function (err, data) {
-        if(err){
+        if (err) {
             console.log(err);
         }
         let firstCommand = data.split(",")[0];
         let secondCommand = data.split(",")[1];
-         command = firstCommand;
-         userInput = secondCommand;
-
-         main(command);
-        });
+        command = firstCommand;
+        userInput = secondCommand;
+        
+        appendToLogTxt("dowhatItSays");
+        main(command);
+    });
 }
 
+function createFile(filename) {
+    fs.open(filename,'r',function(err, fd){
+      if (err) {
+        fs.writeFile(filename, '', function(err) {
+            if(err) {
+                console.log(err);
+            }
+            console.log("The file was saved!");
+        });
+      } else {
+        console.log("The file exists!");
+      }
+    });
+  }
 
+function appendToLogTxt(htmlInput){
+    createFile("log.txt");
+    fs.appendFile("log.txt", htmlInput + "\n============\n", function(err) {
+        if (err) {
+          return console.log(err);
+        }
+      });
+}
 
 
 

@@ -1,0 +1,136 @@
+
+===========================bands in town==================================
+
+            Name of the Venue: Tacoma Dome
+            Venue Location: Tacoma United States
+            Date of the Event: 06/10/20
+===========================bands in town==================================
+
+            Name of the Venue: Moda Center
+            Venue Location: Portland United States
+            Date of the Event: 06/11/20
+===========================bands in town==================================
+
+            Name of the Venue: Golden 1 Center
+            Venue Location: Sacramento United States
+            Date of the Event: 06/13/20
+===========================bands in town==================================
+
+            Name of the Venue: SAP Center At San Jose
+            Venue Location: San Jose United States
+            Date of the Event: 06/16/20
+===========================bands in town==================================
+
+            Name of the Venue: The Forum
+            Venue Location: Los Angeles United States
+            Date of the Event: 06/18/20
+===========================bands in town==================================
+
+            Name of the Venue: T-Mobile Arena
+            Venue Location: Las Vegas United States
+            Date of the Event: 06/20/20
+===========================bands in town==================================
+
+            Name of the Venue: AT&T Center
+            Venue Location: San Antonio United States
+            Date of the Event: 06/23/20
+===========================bands in town==================================
+
+            Name of the Venue: American Airlines Center
+            Venue Location: Dallas United States
+            Date of the Event: 06/25/20
+===========================bands in town==================================
+
+            Name of the Venue: BOK Center
+            Venue Location: Tulsa United States
+            Date of the Event: 06/26/20
+===========================bands in town==================================
+
+            Name of the Venue: Scotiabank Arena
+            Venue Location: Toronto Canada
+            Date of the Event: 07/10/20
+===========================bands in town==================================
+
+            Name of the Venue: Prudential Center
+            Venue Location: Newark United States
+            Date of the Event: 07/14/20
+===========================bands in town==================================
+
+            Name of the Venue: TD Garden
+            Venue Location: Boston United States
+            Date of the Event: 07/16/20
+===========================bands in town==================================
+
+            Name of the Venue: Little Caesers Arena
+            Venue Location: Detroit United States
+            Date of the Event: 07/19/20
+===========================bands in town==================================
+
+            Name of the Venue: United Center
+            Venue Location: Chicago United States
+            Date of the Event: 07/21/20
+===========================bands in town==================================
+
+            Name of the Venue: Enterprise Center
+            Venue Location: St Louis United States
+            Date of the Event: 07/23/20
+===========================bands in town==================================
+
+            Name of the Venue: Capital One Arena
+            Venue Location: Washington, D.c. United States
+            Date of the Event: 07/25/20
+===========================bands in town==================================
+
+            Name of the Venue: Madison Square Garden
+            Venue Location: New York United States
+            Date of the Event: 07/27/20
+===========================bands in town==================================
+
+            Name of the Venue: Madison Square Garden
+            Venue Location: New York United States
+            Date of the Event: 07/28/20
+============
+
+           ========================== Omdb ==============
+         * Title of the movie : The Notebook
+         * Year the movie came out : 2004
+         * IMDB Rating of the movie: 7.8
+         * Rotten Tomatoes Rating of the movie: 53%
+         * Country where the movie was produced: undefined
+         * Language of the movie: English
+         * Plot of the movie: A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences.
+         * Actors in the movie: Tim Ivey, Gena Rowlands, Starletta DuPois, James Garner
+============
+
+            ================== Spotify =====================
+            Artists : Avicii
+            Song Name: Without You (feat. Sandro Cavazza)
+            Preview Link: https://open.spotify.com/track/6Pgkp4qUoTmJIPn7ReaGxL
+            Album Name: AVĪCI (01)
+            
+            ================== Spotify =====================
+            Artists : Parachute
+            Song Name: Without You
+            Preview Link: https://open.spotify.com/track/6R6ux6KaKrhAg2EIB2krdU
+            Album Name: Wide Awake
+            
+            ================== Spotify =====================
+            Artists : David Guetta
+            Song Name: Without You (feat. Usher)
+            Preview Link: https://open.spotify.com/track/1tAutlhI9FwnKn7fVgmd5P
+            Album Name: Nothing but the Beat 2.0
+            
+
+dowhatItSays
+============
+
+           ========================== Omdb ==============
+         * Title of the movie : Inception
+         * Year the movie came out : 2010
+         * IMDB Rating of the movie: 8.8
+         * Rotten Tomatoes Rating of the movie: 87%
+         * Country where the movie was produced: undefined
+         * Language of the movie: English, Japanese, French
+         * Plot of the movie: A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.
+         * Actors in the movie: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy
+============
