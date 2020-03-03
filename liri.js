@@ -80,6 +80,9 @@ function omdb() {
 
 
 function spotifySearch() {
+    if (!userInput) {
+        userInput = 'The Sign';
+    }
     spotify.search({ type: 'track', query: userInput }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
